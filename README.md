@@ -2,6 +2,13 @@
 
 # Block42 CUBIK Token
 
-[![Build Status](https://travis-ci.org/block42world/cubik-contracts.svg?branch=master)](https://travis-ci.org/block42world/cubik-contracts)
+Solidity Contracts for the Block42 Crowdsale and CUBIK Token
 
-Solidity Contracts for the Block42 Crowdsale and CUBIK Token 
+- Using [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity) framework for best security and stability
+- Token is ERC20 standard
+- Using newest Solidity version 0.4.24 at the time of writing
+- Source and flattened version using [truffle-flattener](https://github.com/alcuadrado/truffle-flattener)
+
+## TODO
+- Add build testing in Travis CI
+[![Build Status](https://travis-ci.org/block42world/cubik-contracts.svg?branch=master)](https://travis-ci.org/block42world/cubik-contracts)
