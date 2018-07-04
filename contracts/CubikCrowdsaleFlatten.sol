@@ -512,14 +512,14 @@ contract HasNoTokens is CanReclaimToken {
 
 contract CubikCrowdsale is CappedCrowdsale, AllowanceCrowdsale, HasNoTokens {
 
-	event RateChange(uint256 amount);
- 
-    constructor (uint256 _rate, address _wallet, ERC20 _token, uint256 _cap) public Crowdsale(_rate, _wallet, _token) CappedCrowdsale(_cap) AllowanceCrowdsale(_wallet) {
-    }
+  event RateChange(uint256 amount);
 
-    function setRate(uint256 _rate) external onlyOwner {
-    	rate = _rate;
-    	emit RateChange(_rate);
-    }
-    
+  constructor (uint256 _rate, address _wallet, ERC20 _token, uint256 _cap) public Crowdsale(_rate, _wallet, _token) CappedCrowdsale(_cap) AllowanceCrowdsale(_wallet) {
+  }
+
+  function setRate(uint256 _rate) external onlyOwner {
+    rate = _rate;
+    emit RateChange(_rate);
+  }
+	
 }
