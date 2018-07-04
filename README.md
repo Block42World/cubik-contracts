@@ -2,6 +2,8 @@
 
 # Block42 CUBIK Token
 
+## About
+
 Solidity Contracts for the Block42 Crowdsale and CUBIK Token
 
 - Using [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity) framework for best security and stability
