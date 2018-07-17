@@ -4,8 +4,9 @@ import "openzeppelin-solidity/contracts/token/ERC20/PausableToken.sol";
 import "openzeppelin-solidity/contracts/ownership/HasNoTokens.sol";
 
 /**
-* @title Cubik
-* @dev ERC20 CUBIK Token
+* @title Cubik token contract
+* @auther Richard Fu
+* @dev Complant with OpenZeppelin's implementation of the ERC20 spec
 *
 * CUBIK Tokens are divisible by 1e18 (1,000,000,000,000,000,000) base
 * units referred to as 'Wei'.

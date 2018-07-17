@@ -4,6 +4,11 @@ import 'openzeppelin-solidity/contracts/crowdsale/emission/AllowanceCrowdsale.so
 import 'openzeppelin-solidity/contracts/crowdsale/validation/CappedCrowdsale.sol';
 import "openzeppelin-solidity/contracts/ownership/HasNoTokens.sol";
 
+/**
+* @title Cubik crowdsale contract
+* @auther Richard Fu
+* @dev Complant with OpenZeppelin's imlementation of the crowdsale spec
+*/
 contract CubikCrowdsale is CappedCrowdsale, AllowanceCrowdsale, HasNoTokens {
 
   event RateChange(uint256 amount);
