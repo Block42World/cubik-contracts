@@ -1,7 +1,7 @@
 {
   "name": "cubik-contracts",
   "version": "1.0.0",
-  "description": "Cubik contracts",
+  "description": "CUBIK token and crowdsale smart contracts",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "keywords": [
     "Block42",
-    "Cubik",
+    "CUBIK",
     "ERC20",
     "Token",
     "Blockchain"
@@ -19,6 +19,10 @@
   "author": "Richard Fu",
   "license": "ISC",
   "dependencies": {
-    "openzeppelin-solidity": "1.10.0"
+    "openzeppelin-solidity": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Block42World/cubik-contracts.git"
   }
 }
