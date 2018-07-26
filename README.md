@@ -2,40 +2,39 @@
 
 # Block42 CUBIK Token and Crowdsale Contracts
 
-## About
-
-Solidity Contracts for the Block42 CUBIK Token and Crowdsale
-
 - Using [OpenZeppelin 1.11.0](https://github.com/OpenZeppelin/openzeppelin-solidity) framework for best security and stability
 - Token is ERC20 standard
 - Using lateset [Solidity 0.4.24](http://solidity.readthedocs.io/en/v0.4.24/) at the time of writing
-- Source and flattened version using [truffle-flattener](https://github.com/alcuadrado/truffle-flattener). Flattened scripts can be used to deploy at [Remix](http://remix.ethereum.org) without using truffle.
+- Using [async/awake](https://truffleframework.com/docs/getting_started/javascript-tests#using-async-await) and [Chai](http://www.chaijs.com/api/bdd/) for clean and readable test code
+- Flattened scripts using [truffle-flattener](https://github.com/alcuadrado/truffle-flattener), for deploying to [Remix](http://remix.ethereum.org) without using truffle
 
-## Development
+## Getting Started
 
 ### Prerequisites
-- [npm](https://docs.npmjs.com/cli/install)
+- [Node.js 10.7.x](https://nodejs.org/en/download/current/)
 - [truffle](https://github.com/trufflesuite/truffle) `npm install -g truffle`
+- [ganache-cli](https://github.com/trufflesuite/ganache-cli) `npm install -g ganache-cli`
 - [truffle-flattener](https://www.npmjs.com/package/truffle-flattener) `npm install -g truffle-flattener`
 
 ### Install dependencies
-`$ npm i`
+`npm i`
+
+### Start Ganache CLI to run a local private blockchain, or use GUI [Ganache](https://truffleframework.com/ganache)
+`ganache-cli`
 
 ### Compile the contracts
-`$ truffle compile`
+`truffle compile`
 
 ### Deploy contracts to the local environment
-`$ truffle migrate`
+`truffle migrate`
 
 ### Run test
-`$ truffle test`
+`truffle test`
 
-### Flattened file creation (Optional to deploy at remix without using Truffle)
-
+### Create flattened scripts (Optional to deploy at Remix)
 ```
-$ cd path-to-project/cubik-contracts
-$ truffle-flattener contracts/Cubik.sol > contracts_flattened/Cubik.sol
-$ truffle-flattener contracts/CubikVrowdsale.sol > contracts_flattened/CubikVrowdsale.sol
+truffle-flattener contracts/World.sol > contracts_flattened/World.sol
+truffle-flattener contracts/Land.sol > contracts_flattened/Land.sol
 ```
 
 ### Contract Address
@@ -49,8 +48,13 @@ $ truffle-flattener contracts/CubikVrowdsale.sol > contracts_flattened/CubikVrow
 - [Cubik.sol](contracts_flattened/Cubik.sol): [0x9a62d3825e07342568a34aa31aad38bb04250806](https://kovan.etherscan.io/address/0x9a62d3825e07342568a34aa31aad38bb04250806)
 - [CubikCrowdsale.sol](contracts_flattened/CubikCrowdsale.sol): [0xea9be48045942ffb578e1e295e5401e86cba8e8c](https://kovan.etherscan.io/address/0xea9be48045942ffb578e1e295e5401e86cba8e8c)
 
-### TODO
-- Create test cases and run `truffle test`
-- Add build testing in Travis CI
-[![Build Status](https://travis-ci.org/block42world/cubik-contracts.svg?branch=master)](https://travis-ci.org/block42world/cubik-contracts)
+## TODO
+- Complete all test cases
+- Add Travis CI badge
+[![Build Status](https://img.shields.io/travis/Block42World/cubik-contracts.svg?branch=master&style=flat-square)](https://travis-ci.org/Block42World/cubik-contracts)
+- Add CoverAlls badge
+[![Coverage Status](https://img.shields.io/coveralls/github/Block42World/cubik-contracts/master.svg?style=flat-square)](https://coveralls.io/github/Block42World/cubik-contracts?branch=master)
 - Add [TimeLockToken](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/token/ERC20/TokenTimelock.sol)
+
+## License
+Code released under the [MIT License](LICENSE).
