@@ -20,7 +20,7 @@ contract CubikCrowdsale is CappedCrowdsale, AllowanceCrowdsale, HasNoTokens {
    * @param _token CUBIK contract address
    * @param _cap Max amount of wei to be contributed
    */
-  constructor (uint256 _rate, address _wallet, ERC20 _token, uint256 _cap) public Crowdsale(_rate, _wallet, _token) CappedCrowdsale(_cap) AllowanceCrowdsale(_wallet) {
+  constructor(uint256 _rate, address _wallet, ERC20 _token, uint256 _cap) public Crowdsale(_rate, _wallet, _token) CappedCrowdsale(_cap) AllowanceCrowdsale(_wallet) {
   }
   
   /** 

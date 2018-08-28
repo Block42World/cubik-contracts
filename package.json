@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test"
   },
   "keywords": [
     "Block42",
@@ -17,9 +17,12 @@
     "Blockchain"
   ],
   "author": "Richard Fu",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "openzeppelin-solidity": "^1.11.0"
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "openzeppelin-solidity": "^1.12.0"
   },
   "repository": {
     "type": "git",
